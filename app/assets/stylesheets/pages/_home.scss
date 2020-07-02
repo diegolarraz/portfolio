@@ -1,1 +1,426 @@
 // Specific CSS for your home-page
+// loading screen stylings, spinkit
+.full-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Dosis', sans-serif;
+}
+
+.gap {
+  margin-top: 40px;
+}
+.quotes {display: none;}
+
+// navigation bar styling
+.navbar {
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.0);
+  -webkit-transition: background-color 2s ease-in;
+   -moz-transition: background-color 2s ease-in;
+    -ms-transition: background-color 2s ease-in;
+     -o-transition: background-color 2s ease-in;
+        transition: background-color 2s ease-in;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  padding-top: 13px;
+  img {
+    height: 22px;
+  }
+  .text {
+    margin-top: 13px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.75s;
+    transition: border-bottom 0.75s;
+    &:hover {
+      border-bottom: 1px solid #3FAEFD;
+    }
+  }
+}
+
+.nav-bg {
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
+// landing page styling
+.front-page {
+  height:99vh;
+  width: 100%;
+  background: image-url('front-page.jpg') no-repeat right center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  .title {
+    font-size: 80px;
+    font-weight:200;
+    .underline {
+      border-bottom: 2px solid #3FAEFD;
+    }
+  }
+  .summary {
+    font-size: 35px;
+    font-weight:200;
+  }
+
+  .white-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 60px;
+    width: 140px;
+    border: 4px solid white;
+    float:right;
+    margin-right: 10px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.75s, color 0.75s;
+    transition: background-color 0.75s, color 0.75s;
+    &:hover {
+      background-color: white;
+      color: grey;
+    }
+  }
+
+  .orange-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 60px;
+    width: 140px;
+    background-color: #3FAEFD;
+    border-radius: 5px;
+    float:right;
+    -webkit-transition: background-color 0.75s, color 0.75s;
+    transition: background-color 0.75s, color 0.75s;
+    &:hover {
+      background-color: #FEDC37;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}
+
+// about me section styling
+
+.about-me-strip {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  background: #FEDC37;
+  color: white;
+  .title {
+    font-size: 70px;
+    font-weight:200;
+    color: black;
+  }
+  .sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight:200;
+    color: black;
+  }
+}
+
+.about-me {
+  font-family: 'Montserrat', sans-serif;
+  color: #212121;
+  font-size: 15px;
+  font-weight:300;
+}
+
+// code to make box same height
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.is-flex .box {
+  background: none;
+  position: static;
+}
+.is-flex [class*="col-"] {
+  background: transparent;
+}
+
+// styling for education, experience and skills
+.education-experience-skills {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: #008CEA;
+  font-weight:200;
+  .line {
+    margin:0 auto;
+    width: 75px;
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 10px;
+  }
+  strong {
+    font-weight: 400;
+  }
+  a {
+    color: grey;
+  }
+  .skill-icons{
+    i {
+      font-size: 55px;
+      margin: 3px;
+      line-height: 1.3;
+    }
+  }
+  .box {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    // background: white;
+    // color: black;
+    background: transparent;
+    color: white;
+
+    padding: 5px 15px 15px 15px;
+    height: 100%;
+    // -moz-box-shadow: 0 0 10px #C0C0C0;
+    // -webkit-box-shadow: 0 0 10px #C0C0C0;
+    // box-shadow: 0 0 10px #C0C0C0;
+    -webkit-transition: box-shadow 0.5s, background 0.5s, color 0.5s;
+    transition: box-shadow 0.5s, background 0.5s, color 0.5s;
+    &:hover {
+      -moz-box-shadow: 0 0 10px grey;
+      -webkit-box-shadow: 0 0 10px grey;
+      box-shadow: 0 0 10px grey;
+
+      background: #FEDC37;
+      color: black;
+    }
+    img {
+      height: 30px;
+    }
+  }
+}
+
+.portfolio-strip {
+  font-size: 60px;
+  font-weight:400;
+  /* The image used */
+  background-image: image-url("portfolio-strip.jpg");
+
+  /* Set a specific height */
+  height: 180px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  .line {
+    margin:0 auto;
+    width: 130px;
+    border-bottom: 2px solid #FEDC37;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  img {
+    height: 300px;
+    border: 0px;
+  }
+  .hidden {
+    height: 1px;
+  }
+
+  .grid {
+    color: transparent;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    .line {
+      margin:0 auto;
+      width: 130px;
+      border-bottom: 1px solid transparent;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      -webkit-transition: border-color 0.5s;
+      transition: border-color 0.5s;
+    }
+    &:before {
+      background-image: linear-gradient(0deg,rgba(255,255,255,0.95),rgba(255,255,255,0.95));
+      background-size: cover;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: -100;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+    }
+
+    &:hover {
+      color: black;
+      .line {
+        border-bottom: 1px solid #FEDC37;
+      }
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  .portfolio-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    font-family: 'Fira Sans', sans-serif;
+    .title {
+      font-size: 25px;
+    }
+    .summary {
+      font-size: 13px;
+    }
+  }
+  #portfolio-1 {
+    background-image: image-url("portfolio-1.jpg");
+  }
+  #portfolio-2 {
+    background-image: image-url("portfolio-2.jpg");
+  }
+  #portfolio-3 {
+    background-image: image-url("portfolio-3.jpg");
+  }
+  #portfolio-4 {
+    background-image: image-url("portfolio-4.jpg");
+  }
+  #portfolio-6 {
+    background-image: image-url("portfolio-6.png");
+  }
+}
+
+.contact-me {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #212121;
+  color: white;
+  .title {
+    font-size: 50px;
+    font-weight:200;
+  }
+  .line {
+    margin:0 auto;
+    width: 100%;
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 10px;
+  }
+  i, a {
+    font-size: 50px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    color: white;
+    &:hover {
+      color: grey;
+    }
+  }
+  .copyright {
+    font-family: 'Fira Sans', sans-serif;
+  }
+}
