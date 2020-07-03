@@ -23,44 +23,26 @@
   width: 6px;
   display: inline-block;
 
-  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
   animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
 
 .spinner .rect2 {
-  -webkit-animation-delay: -1.1s;
   animation-delay: -1.1s;
 }
 
 .spinner .rect3 {
-  -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;
 }
 
 .spinner .rect4 {
-  -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
 
 .spinner .rect5 {
-  -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s;
 }
 
-@-webkit-keyframes sk-stretchdelay {
-  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
-  20% { -webkit-transform: scaleY(1.0) }
-}
 
-@keyframes sk-stretchdelay {
-  0%, 40%, 100% {
-    transform: scaleY(0.4);
-    -webkit-transform: scaleY(0.4);
-  }  20% {
-    transform: scaleY(1.0);
-    -webkit-transform: scaleY(1.0);
-  }
-}
 
 html, body {
     max-width: 100%;
@@ -76,12 +58,7 @@ html, body {
 // navigation bar styling
 .navbar {
   overflow: hidden;
-  background-color:rgba(0, 0, 0, 0.0);
-  -webkit-transition: background-color 2s ease-in;
-   -moz-transition: background-color 2s ease-in;
-    -ms-transition: background-color 2s ease-in;
-     -o-transition: background-color 2s ease-in;
-        transition: background-color 2s ease-in;
+  background-color:rgba(0, 0, 0, 0.75);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -100,7 +77,6 @@ html, body {
     text-decoration: none;
     padding-bottom: 5px;
     border-bottom: 1px solid transparent;
-    -webkit-transition: border-bottom 0.75s;
     transition: border-bottom 0.75s;
     &:hover {
       border-bottom: 1px solid #3FAEFD;
@@ -117,9 +93,6 @@ html, body {
   height:99vh;
   width: 100%;
   background: image-url('front-page.jpg') no-repeat right center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: relative;
 
@@ -151,7 +124,6 @@ html, body {
     float:right;
     margin-right: 10px;
     border-radius: 5px;
-    -webkit-transition: background-color 0.75s, color 0.75s;
     transition: background-color 0.75s, color 0.75s;
     &:hover {
       background-color: white;
@@ -169,10 +141,9 @@ html, body {
     background-color: #3FAEFD;
     border-radius: 5px;
     float:right;
-    -webkit-transition: background-color 0.75s, color 0.75s;
     transition: background-color 0.75s, color 0.75s;
     &:hover {
-      background-color: #FEDC37;
+      background-color: #A1CDE3;
     }
   }
 
@@ -181,24 +152,23 @@ html, body {
   }
 }
 
-// about me section styling
 
 .about-me-strip {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  background: #FEDC37;
+  background: #A1CDE3;
   color: white;
   .title {
     font-size: 70px;
     font-weight:200;
-    color: black;
+    color: white;
   }
   .sub-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight:200;
-    color: black;
+    color: white;
   }
 }
 
@@ -264,14 +234,8 @@ html, body {
 
     padding: 5px 15px 15px 15px;
     height: 100%;
-    // -moz-box-shadow: 0 0 10px #C0C0C0;
-    // -webkit-box-shadow: 0 0 10px #C0C0C0;
-    // box-shadow: 0 0 10px #C0C0C0;
-    -webkit-transition: box-shadow 0.5s, background 0.5s, color 0.5s;
     transition: box-shadow 0.5s, background 0.5s, color 0.5s;
     &:hover {
-      -moz-box-shadow: 0 0 10px grey;
-      -webkit-box-shadow: 0 0 10px grey;
       box-shadow: 0 0 10px grey;
 
       background: #FEDC37;
@@ -330,7 +294,6 @@ html, body {
     display: inline-block;
     position: relative;
     z-index: 100;
-    -webkit-transition: color 0.5s;
     transition: color 0.5s;
     .line {
       margin:0 auto;
@@ -338,7 +301,6 @@ html, body {
       border-bottom: 1px solid transparent;
       margin-top: 10px;
       margin-bottom: 10px;
-      -webkit-transition: border-color 0.5s;
       transition: border-color 0.5s;
     }
     &:before {
@@ -352,7 +314,6 @@ html, body {
       opacity: 0;
       width: 100%;
       z-index: -100;
-      -webkit-transition: opacity 0.5s;
       transition: opacity 0.5s;
     }
 
@@ -413,7 +374,6 @@ html, body {
   }
   i, a {
     font-size: 50px;
-    -webkit-transition: color 0.5s;
     transition: color 0.5s;
     color: white;
     &:hover {

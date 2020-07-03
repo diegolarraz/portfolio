@@ -1,3 +1,33 @@
+  <div class="navbar">
+    <div class="container">
+      <div class="my-nav intro">
+        <div class="navbar-left">
+          <a href="/" class="full-name">
+            Full Stack Developer
+          </a>
+          <a href="/" class="short-name">
+            <strong>DL</strong>FSD
+          </a>
+        </div>
+        <div class="navbar-right">
+          <%= link_to "Home", "#home", class: "navbar-link about" %>
+          <%= link_to "About me", "#about-me", class: "navbar-link about" %>
+          <%= link_to "Summary", "#summary", class: "navbar-link about" %>
+          <%= link_to "Projects", "#projects", class: "navbar-link projects" %>
+          <%= link_to "Contact", "#contact", class: "navbar-link contact" %>
+
+          <div class="burger-menu">
+            <div class="burger-menu-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="burger-dropdown">
+        <%= link_to "Projects", "#projects", class: "dropdown-link projects" %>
+        <%= link_to "About me", "#", class: "dropdown-link about" %>
+        <%= link_to "Get in touch", "#", class: "dropdown-link contact" %>
+      </div>
+    </div>
+  </div>
   <div class="front-page" id="home">
     <div class="container">
       <div class="row">
@@ -229,115 +259,13 @@
           <% end %>
           <br><br><br>
           <div class="line"></div><br>
-          <a href="https://www.linkedin.com/in/shouhei-yamauchi/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;
-          <a href="https://github.com/shouheiyamauchi" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>&nbsp;
-          <a href="https://bitbucket.org/shouheiyamauchi/" target="_blank"><i class="fa fa-bitbucket-square" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/shouhei-yamauchi/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;
+          <a href="https://github.com/diegolarraz" target="_blank"><i class="fab fa-github-square"></i></a>&nbsp;
           <br><br>
-          <span class="copyright">&copy; 2017 Shouhei Yamauchi</span>
+          <span class="copyright">&copy; 2020 Diego Larraz</span>
         </div>
         <div class="hiddex-xs col-sm-2 col-md-3 col-lg-3"></div>
       </div>
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-  (function() {
-
-    var quotes = $(".quotes");
-    var quoteIndex = -1;
-
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(1500)
-            .delay(1500)
-            .fadeOut(1500, showNextQuote);
-    }
-
-    showNextQuote();
-
-  })();
-</script>
-<script type="text/javascript">
-  var frontPage = {
-    duration: 1500,
-  }
-  var frontPageContent1 = {
-    duration: 1500,
-    delay: 500,
-  }
-  var im = {
-    duration: 1500,
-    delay: 1000,
-  }
-  var underline = {
-    duration: 1500,
-    delay: 1300,
-  }
-  var frontPageContent2 = {
-    duration: 1500,
-    delay: 2000,
-  }
-  var frontPageContent3 = {
-    scale: 0.9,
-    duration: 1500,
-    delay: 3000,
-  }
-  var reveal = {
-    duration: 800,
-    reset: true,
-  }
-  var box = {
-    duration: 800,
-    reset: true,
-  }
-  var grid = {
-    duration: 800,
-    reset: true,
-  }
-  sr.reveal('.front-page', frontPage);
-  sr.reveal('.front-page-content1', frontPageContent1);
-  sr.reveal('.im', im);
-  sr.reveal('.underline', underline);
-  sr.reveal('.front-page-content2', frontPageContent2);
-  sr.reveal('.front-page-content3', frontPageContent3);
-  sr.reveal('.reveal', reveal);
-  sr.reveal('.box', box, 150);
-  sr.reveal('.grid', grid, 150);
-</script>
-<!-- Page preloader -->
-<script type="text/javascript">
-  $(window).load(function() {
-    $("#loading").addClass("hidden");
-    $("#hidden").removeClass("hidden");
-    window.scrollBy(0, 1);
-  })
-</script>
-<!-- Smooth scrolling -->
-<script type="text/javascript">
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-        return false;
-      }
-    }
-  });
-</script>
-<!-- Javascript to add class on scroll for navbar -->
-<script type="text/javascript">
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-     //>=, not <=
-    if (scroll >= 100) {
-        //clearHeader, not clearheader - caps H
-        $(".navbar").addClass("nav-bg");
-    }
-  }); //missing );
-</script>
