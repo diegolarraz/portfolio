@@ -156,8 +156,23 @@
 
 <div class="portfolio text-center white">
   <div class="container white">
-    <div class="project-link mr-30">
-      <%= image_tag "emitless.png", class: "link-image", alt: "Computer screen logo" %>
+    <div class="emitless">
+      <div class="project-link">
+        <%= link_to "https://www.emitless-app.com", :target => '_blank' do %>
+         <%= image_tag "emitless.png", class: "link-image", alt: "Computer screen logo" %>
+        <% end %>
+      </div>
+      <div class="description">
+        <h2 class="mb15">Emitless</h2>
+        <p class="emitless-description">
+          A new website for an established musician who wanted to expand his online presence and have more freedom on the content he wished to post than was available with his previous host.
+        </p>
+        <div class="emitless-links">
+        <%= link_to "View site", "https://www.emitless-app.com", target: "_blank"  %>
+
+        <%= link_to "View source", "https://github.com/diegolarraz/Emitless", target: "_blank"  %>
+        </div>
+      </div>
     </div>
   </div>
 </div>

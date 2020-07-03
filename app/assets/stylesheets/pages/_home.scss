@@ -218,7 +218,6 @@ html, body {
 }
 
 .portfolio {
-  padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
   img {
@@ -330,6 +329,20 @@ html, body {
   background-color: white;
 }
 
+.emitless {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  img {
+    flex: 1;
+  }
+
+  .description {
+    max-width: 500px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .front-page {
 
