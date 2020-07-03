@@ -18,20 +18,6 @@
   box-shadow: 0px -4px 0px $purple inset;
 }
 
-.burger-dropdown {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  background: white;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  padding-top: 15px;
-  transition: height .5s ease, opacity .5s ease;
-  border-bottom: 4px solid $dark-purple;
-  z-index: 10;
-}
-
 .dropdown-link {
   display: block;
   padding: 15px 0;
@@ -92,10 +78,10 @@
     color: white;
     text-decoration: none;
     padding-bottom: 5px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: border-bottom 0.75s;
     &:hover {
-      border-bottom: 1px solid #3FAEFD;
+      border-bottom: 3px solid #3FAEFD;
     }
   }
 }
