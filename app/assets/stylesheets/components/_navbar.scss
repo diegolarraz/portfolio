@@ -71,6 +71,39 @@
   transform: rotate(90deg);
 }
 
+// navigation bar styling
+.navbar {
+  overflow: hidden;
+  background-color:rgba(0, 0, 0, 0.75);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  padding-top: 13px;
+  img {
+    height: 22px;
+  }
+  .text {
+    margin-top: 13px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.75s;
+    &:hover {
+      border-bottom: 1px solid #3FAEFD;
+    }
+  }
+}
+
+.nav-bg {
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
 
 @media(max-width: 992px) {
 
