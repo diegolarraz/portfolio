@@ -206,11 +206,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #A1CEE3;
   .line {
     margin:0 auto;
     width: 130px;
-    border-bottom: 2px solid #FEDC37;
+    border-bottom: 2px solid #A1CEE3;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -324,6 +324,10 @@ html, body {
   .copyright {
     font-family: 'Fira Sans', sans-serif;
   }
+}
+
+.white {
+  background-color: white;
 }
 
 @media only screen and (max-width: 576px) {
