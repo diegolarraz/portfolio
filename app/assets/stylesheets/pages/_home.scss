@@ -142,7 +142,7 @@ html, body {
   padding-top: 15px;
   padding-bottom: 30px;
   width: 100%;
-  background-color: #008CEA;
+  background-color: #44B0FC;
   font-weight:200;
   .line {
     margin:0 auto;
@@ -175,9 +175,9 @@ html, body {
 
     padding: 15px 15px 15px 15px;
     height: 100%;
-    transition: box-shadow 0.5s, background 0.5s, color 0.9s;
+    transition: box-shadow 0.5s, background 0.5s, color 0.5s;
     &:hover {
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 
       background: #A1CDE3;
       color: white;
