@@ -343,6 +343,21 @@ html, body {
     max-width: 500px;
   }
 }
+
+.fixenova {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  img {
+    flex: 1;
+  }
+
+  .description {
+    max-width: 500px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .front-page {
 
