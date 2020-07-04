@@ -142,7 +142,7 @@ html, body {
   padding-top: 15px;
   padding-bottom: 30px;
   width: 100%;
-  background-color: #008CEA;
+  background-color: #44B0FC;
   font-weight:200;
   .line {
     margin:0 auto;
@@ -175,9 +175,9 @@ html, body {
 
     padding: 15px 15px 15px 15px;
     height: 100%;
-    transition: box-shadow 0.5s, background 0.5s, color 0.9s;
+    transition: box-shadow 0.5s, background 0.5s, color 0.5s;
     &:hover {
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 
       background: #A1CDE3;
       color: white;
@@ -206,11 +206,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #A1CEE3;
   .line {
     margin:0 auto;
     width: 130px;
-    border-bottom: 2px solid #FEDC37;
+    border-bottom: 2px solid #A1CEE3;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -218,7 +218,6 @@ html, body {
 }
 
 .portfolio {
-  padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
   img {
@@ -326,6 +325,24 @@ html, body {
   }
 }
 
+.white {
+  background-color: white;
+}
+
+.emitless {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  img {
+    flex: 1;
+  }
+
+  .description {
+    max-width: 500px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .front-page {
 
