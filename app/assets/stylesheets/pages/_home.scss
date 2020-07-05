@@ -35,7 +35,7 @@ html, body {
     font-size: 80px;
     font-weight:200;
     .underline {
-      border-bottom: 2px solid #3FAEFD;
+      border-bottom: 2px solid $pastel-pink;
     }
   }
 
@@ -78,7 +78,7 @@ html, body {
     font-size: 18px;
     height: 60px;
     width: 140px;
-    background-color: #3FAEFD;
+    background-color: $pastel-blue;
     border-radius: 5px;
     float:right;
     transition: background-color 0.75s, color 0.75s;

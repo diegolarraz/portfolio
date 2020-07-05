@@ -30,24 +30,6 @@
   opacity: 1;
 }
 
-.burger-menu {
-  width: 20px;
-  height: 20px;
-  align-items: center;
-  box-shadow:
-  0px -2px 0px $dark-purple inset,
-  0px 2px 0px $dark-purple inset;
-  transition: transform .5s ease, height .5s ease;
-  cursor: pointer;
-}
-
-.burger-menu-inner {
-  width: 20px;
-  height: 2px;
-  box-shadow: 0px 2px 0px $dark-purple inset;
-  transition: transform .5s ease;
-}
-
 .rotate-outer {
   transform: rotate(45deg);
   height: 2px;
@@ -60,7 +42,7 @@
 // navigation bar styling
 .navbar {
   overflow: hidden;
-  background-color:rgba(0, 0, 0, 0.75);
+  background-color: rgba(145, 175, 198, 0.9);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
