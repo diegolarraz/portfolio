@@ -25,12 +25,11 @@ html, body {
   background: image-url('front-page.jpg') no-repeat right center;
   background-size: cover;
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   color: white;
+
   .title {
     font-size: 80px;
     font-weight:200;
@@ -97,7 +96,7 @@ html, body {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
-  background: #A1CDE3;
+  background: $lighter-pastel;
   color: white;
   .title {
     font-size: 70px;
@@ -142,7 +141,7 @@ html, body {
   padding-top: 15px;
   padding-bottom: 30px;
   width: 100%;
-  background-color: #44B0FC;
+  background-color: $lighter-pastel;
   font-weight:200;
   .line {
     margin:0 auto;
@@ -179,7 +178,7 @@ html, body {
     &:hover {
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 
-      background: #A1CDE3;
+      background: $light-pastel;
       color: white;
     }
     img {
@@ -191,17 +190,9 @@ html, body {
 .portfolio-strip {
   font-size: 60px;
   font-weight:400;
-  /* The image used */
-  background-image: image-url("portfolio-strip.jpg");
 
   /* Set a specific height */
   height: 180px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   display: flex;
   align-items: center;
@@ -219,88 +210,16 @@ html, body {
 
 .portfolio {
   padding-bottom: 100px;
-  text-align: center;
+
   img {
     height: 300px;
-    border: 0px;
-  }
-  .hidden {
-    height: 1px;
-  }
-
-  .grid {
-    color: transparent;
-    background-size: cover;
-    display: inline-block;
-    position: relative;
-    z-index: 100;
-    transition: color 0.5s;
-    .line {
-      margin:0 auto;
-      width: 130px;
-      border-bottom: 1px solid transparent;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      transition: border-color 0.5s;
-    }
-    &:before {
-      background-image: linear-gradient(0deg,rgba(255,255,255,0.95),rgba(255,255,255,0.95));
-      background-size: cover;
-      content: '';
-      display: block;
-      height: 100%;
-      position: absolute;
-      top: 0; left: 0;
-      opacity: 0;
-      width: 100%;
-      z-index: -100;
-      transition: opacity 0.5s;
-    }
-
-    &:hover {
-      color: black;
-      .line {
-        border-bottom: 1px solid #FEDC37;
-      }
-      &:before {
-        opacity: 1;
-      }
-    }
-  }
-  .portfolio-contents {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    font-family: 'Fira Sans', sans-serif;
-    .title {
-      font-size: 25px;
-    }
-    .summary {
-      font-size: 13px;
-    }
-  }
-  #portfolio-1 {
-    background-image: image-url("portfolio-1.jpg");
-  }
-  #portfolio-2 {
-    background-image: image-url("portfolio-2.jpg");
-  }
-  #portfolio-3 {
-    background-image: image-url("portfolio-3.jpg");
-  }
-  #portfolio-4 {
-    background-image: image-url("portfolio-4.jpg");
-  }
-  #portfolio-6 {
-    background-image: image-url("portfolio-6.png");
   }
 }
 
 .contact-me {
   padding-top: 20px;
   padding-bottom: 30px;
-  background-color: #212121;
+  background-color: $pastel-blue;
   color: white;
   .title {
     font-size: 50px;

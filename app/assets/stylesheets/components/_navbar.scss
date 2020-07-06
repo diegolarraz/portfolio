@@ -42,7 +42,7 @@
 // navigation bar styling
 .navbar {
   overflow: hidden;
-  background-color: rgba(145, 175, 198, 0.9);
+  background-color: rgba(161, 205, 227, .9);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -63,7 +63,7 @@
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.75s;
     &:hover {
-      border-bottom: 3px solid #3FAEFD;
+      border-bottom: 3px solid white;
     }
   }
 }
