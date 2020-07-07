@@ -14,7 +14,9 @@
         <%= link_to "About me", "#about-me", class: "navbar-link about" %>
         <%= link_to "Summary", "#summary", class: "navbar-link about" %>
         <%= link_to "Projects", "#projects", class: "navbar-link projects" %>
-        <%= link_to "Contact", "#contact-me", class: "navbar-link contact" %>
+        <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go', class: "navbar-link contact" do %>
+          Contact
+        <% end %>
       </div>
     </div>
   </div>
@@ -22,24 +24,37 @@
 
 <div class="front-page" id="home">
   <div class="container">
-        <div class="front-page-content1">
-          <span class="title">Hi, <span class="im">I'm</span> <span class="underline">Diego</span></span><br>
+    <div class="front-page-content1">
+      <span class="title">Hi, <span class="im">I'm</span> <span class="underline">Diego</span></span><br>
+    </div>
+    <div class="front-page-content2">
+      <span class="summary quotes">A Fullstack developer</span><br><br>
+    </div>
+    <div class="front-page-content3">
+      <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go' do %>
+        <div class="orange-button">
+          CONTACT ME
         </div>
-        <div class="front-page-content2">
-          <span class="summary quotes">A Fullstack developer</span><br><br>
+      <% end %>
+      <a href="#about-me">
+        <div class="white-button">
+          READ MORE
         </div>
-        <div class="front-page-content3">
-          <a href="#contact-me">
-            <div class="orange-button">
-              CONTACT ME
-            </div>
-          </a>
-          <a href="#about-me">
-            <div class="white-button">
-              READ MORE
-            </div>
-          </a>
-        </div>
+      </a>
+    </div>
+    <div class="link-container">
+        <%= link_to 'https://www.linkedin.com/in/johnmarsden24/', class: "mr30", target: "_blank", :action => 'go' do %>
+          <%= image_tag "linkedin.svg", class: "hover-big", alt: "LinkedIn logo" %>
+        <% end %>
+
+        <%= link_to 'https://github.com/diegolarraz', class: "mr30", target: "_blank", :action => 'go' do %>
+          <%= image_tag "github.svg", class: "hover-big", alt: "Github logo" %>
+        <% end %>
+
+        <%= link_to download_pdf_path, class: "mr30", target: "_blank", :action => 'go' do %>
+          <%= image_tag "cv.svg", class: "hover-big", alt: "contact card logo" %>
+        <% end %>
+    </div>
   </div>
 </div>
 
@@ -218,30 +233,11 @@
       <div class="hiddex-xs col-sm-2 col-md-3 col-lg-3"></div>
       <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 text-center">
         <span class="title">Contact me</span><br><br>
-        <% if flash[:notice] %>
-            <div class="alert alert-success"><%= flash[:notice] %></div>
-          <% elsif flash[:warning] %>
-            <div class="alert alert-danger"><%= flash[:warning] %></div>
-          <% else %>
-        <% end %>
-        <%= form_for :contact do |f| %>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <input class="form-control" type="text" id="fname" name="contact[name]" placeholder="Name:">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <input class="form-control" type="text" id="lname" name="contact[email]" placeholder="Email:">
-            </div>
-          </div>
-          <br>
-          <span><textarea class="form-control" id="subject" name="contact[message]" placeholder="Message:" style="height:100px"></textarea></span>
-          <br>
-          <input class="btn" type="submit" value="Submit">
-        <% end %>
-        <br><br><br>
-        <div class="line"></div><br>
         <a href="https://www.linkedin.com/in/diego-larraz-22138a175/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;
-        <a href="https://github.com/diegolarraz" target="_blank"><i class="fab fa-github-square"></i></a>&nbsp;
+        <a href="https://github.com/diegolarraz" target="_blank"><i class="fab fa-github-square"></i></a>
+        <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go', class: "navbar-link contact" do %>
+          <i class="far fa-envelope"></i>
+        <% end %>
         <br><br>
         <span class="copyright">&copy; 2020 Diego Larraz</span>
       </div>

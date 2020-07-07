@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>iconmonstr-linkedin-1</title>
+    <g id="Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-150.000000, -490.000000)" fill="#3B44C6" fill-rule="nonzero">
+            <g id="iconmonstr-linkedin-1" transform="translate(150.000000, 490.000000)">
+                <path d="M6.225,3.125 C6.225,4.85125 4.8375,6.25 3.125,6.25 C1.4125,6.25 0.025,4.85125 0.025,3.125 C0.025,1.4 1.4125,0 3.125,0 C4.8375,0 6.225,1.4 6.225,3.125 Z M6.25,8.75 L0,8.75 L0,28.75 L6.25,28.75 L6.25,8.75 Z M16.2275,8.75 L10.0175,8.75 L10.0175,28.75 L16.22875,28.75 L16.22875,18.25125 C16.22875,12.41375 23.765,11.93625 23.765,18.25125 L23.765,28.75 L30,28.75 L30,16.08625 C30,6.23625 18.8475,6.595 16.2275,11.44375 L16.2275,8.75 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
