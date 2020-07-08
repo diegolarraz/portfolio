@@ -288,6 +288,12 @@ html, body {
   align-items: center;
 }
 
+.link-container {
+  width: 9vw;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 576px) {
   .front-page {
 
