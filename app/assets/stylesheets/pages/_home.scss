@@ -263,9 +263,17 @@ html, body {
     flex: 1;
   }
 
-  .description {
-    max-width: 500px;
+  .website-image {
+    margin-right: 5vw;
   }
+}
+
+.description {
+  max-width: 500px;
+}
+
+.morado {
+  color: #769BC5;
 }
 
 .project-even {
@@ -278,8 +286,8 @@ html, body {
     flex: 1;
   }
 
-  .description {
-    max-width: 500px;
+  .website-image {
+    margin-right: 5vw;
   }
 }
 
@@ -311,32 +319,35 @@ html, body {
 
 .project-website {
   display: flex;
-
-  a {
-    margin-left: 8px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
+  align-items: center;
 }
 
 .project-github {
   display: flex;
+  align-items: center;
+}
 
-  a {
-    margin-left: 8px;
+.app-link {
+  margin-left: 8px;
+  text-decoration: none;
+  color: #769BC5;
+  transition: all .2s ease-in-out;
+
+  &:hover {
     text-decoration: none;
+    color: #91AFC6;
+    transform: scale(1.05);
 
-    &:hover {
-      text-decoration: none;
-    }
   }
 }
 
 .link-image {
   width: 2vw;
+  min-width: 24px;
+}
+
+.mobile-link {
+  display: none;
 }
 
 @media only screen and (max-width: 576px) {
@@ -349,7 +360,41 @@ html, body {
     }
   }
 
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-links {
+    width: 42vw;
+  }
+
+  .mobile-link {
+    display: block;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
   .link-container {
     width: 22vw;
+  }
+
+  .project-even {
+    display: block;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .website-image {
+    margin-bottom: 12px;
+  }
+
+  .project-odd {
+    display: block;
+    text-align: center;
+    margin-bottom: 18px;
   }
 }
