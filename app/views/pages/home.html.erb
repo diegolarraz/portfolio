@@ -45,15 +45,15 @@
     <br>
     <div class="link-container">
         <%= link_to 'https://www.linkedin.com/in/johnmarsden24/', class: "mr30", target: "_blank", :action => 'go' do %>
-          <%= image_tag "linkedin.svg", class: "hover-big", alt: "LinkedIn logo" %>
+          <i class="fab fa-linkedin-in front-icon"></i>
         <% end %>
 
         <%= link_to 'https://github.com/diegolarraz', class: "mr30", target: "_blank", :action => 'go' do %>
-          <%= image_tag "github.svg", class: "hover-big", alt: "Github logo" %>
+          <i class="fab fa-github-square front-icon"></i>
         <% end %>
 
         <%= link_to download_pdf_path, class: "mr30", target: "_blank", :action => 'go' do %>
-          <%= image_tag "cv.svg", class: "hover-big", alt: "contact card logo" %>
+          <i class="far fa-file front-icon"></i>
         <% end %>
     </div>
   </div>
@@ -234,9 +234,9 @@
       <div class="hiddex-xs col-sm-2 col-md-3 col-lg-3"></div>
       <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 text-center">
         <span class="title">Contact me</span><br><br>
-        <a href="https://www.linkedin.com/in/diego-larraz-22138a175/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;
-        <a href="https://github.com/diegolarraz" target="_blank"><i class="fab fa-github-square"></i></a>
-        <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go', class: "navbar-link contact" do %>
+        <a href="https://www.linkedin.com/in/diego-larraz-22138a175/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/diegolarraz" target="_blank"><i class="fab fa-github-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go', class: "contact" do %>
           <i class="far fa-envelope"></i>
         <% end %>
         <br><br>

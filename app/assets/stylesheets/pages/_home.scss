@@ -289,9 +289,13 @@ html, body {
 }
 
 .link-container {
-  width: 9vw;
+  width: 14vw;
   display: flex;
   justify-content: space-between;
+}
+
+.front-icon {
+  font-size: 26px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -302,5 +306,9 @@ html, body {
       margin-top: 50vh;
 
     }
+  }
+
+  .link-container {
+    width: 22vw;
   }
 }
