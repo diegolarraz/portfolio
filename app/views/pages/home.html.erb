@@ -172,10 +172,10 @@
 
 <div class="portfolio text-center white">
   <div class="container white">
-    <div class="emitless">
+    <div class="project-odd">
       <div class="project-link">
         <%= link_to "https://www.emitless-app.com", :target => '_blank' do %>
-         <%= image_tag "emitless.png", class: "link-image", alt: "Computer screen logo" %>
+         <%= image_tag "emitless.png", class: "website-image", alt: "Computer screen logo" %>
         <% end %>
       </div>
       <div class="description">
@@ -183,40 +183,47 @@
         <p class="emitless-description">
           A new website for an established musician who wanted to expand his online presence and have more freedom on the content he wished to post than was available with his previous host.
         </p>
-        <div class="emitless-links">
-          <%= link_to "View site", "https://www.emitless-app.com", target: "_blank"  %>
-          <i class="fab fa-github project-icon"></i><%= link_to "View source", "https://github.com/diegolarraz/Emitless", target: "_blank"  %>
+        <div class="project-links">
+          <div class="project-website">
+            <%= image_tag "screen.svg", class: "link-image", alt: "Computer screen logo" %>
+            <%= link_to "View site", "https://www.emitless-app.com", target: "_blank"  %>
+          </div>
+          <div class="project-github">
+            <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
+            <%= link_to "View source", "https://github.com/diegolarraz/Emitless", target: "_blank"  %>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="fixenova">
+    <div class="project-even">
       <div class="description">
         <h2 class="mb15">Fixenova</h2>
         <p class="emitless-description">
           A new website for an established musician who wanted to expand his online presence and have more freedom on the content he wished to post than was available with his previous host.
         </p>
-        <div class="emitless-links">
+        <div class="project-links">
           <div class="project-website">
-            <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
+            <%= image_tag "screen.svg", class: "link-image", alt: "Computer screen logo" %>
             <%= link_to "View site", "https://fiducia.herokuapp.com/", target: "_blank"  %>
           </div>
           <div class="project-github">
-            <i class="fab fa-github project-icon"></i><%= link_to "View source", "https://github.com/diegolarraz/Fiducia", target: "_blank"  %>
+            <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
+            <%= link_to "View source", "https://github.com/diegolarraz/Fiducia", target: "_blank"  %>
           </div>
         </div>
       </div>
       <div class="project-link">
         <%= link_to "https://fiducia.herokuapp.com/", :target => '_blank' do %>
-         <%= image_tag "fiducia.png", class: "link-image", alt: "Computer screen logo" %>
+         <%= image_tag "fiducia.png", class: "website-image", alt: "Computer screen logo" %>
         <% end %>
       </div>
     </div>
 
-    <div class="emitless">
+    <div class="project-odd">
       <div class="project-link">
         <%= link_to "https://www.re-useful.herokuapp.com", :target => '_blank' do %>
-         <%= image_tag "re-useful.png", class: "link-image", alt: "Computer screen logo" %>
+         <%= image_tag "re-useful.png", class: "website-image", alt: "Computer screen logo" %>
         <% end %>
       </div>
       <div class="description">
@@ -224,9 +231,13 @@
         <p class="emitless-description">
           A new website for an established musician who wanted to expand his online presence and have more freedom on the content he wished to post than was available with his previous host.
         </p>
-        <div class="emitless-links">
-          <i class="fal fa-browser"></i><%= link_to "View site", "https://www.re-useful.herokuapp.com", target: "_blank"  %>
-          <i class="fab fa-github project-icon"></i><%= link_to "View source", "https://github.com/diegolarraz/Reuseful", target: "_blank"  %>
+        <div class="project-links">
+          <div class="project-website">
+            <%= link_to "View site", "https://www.re-useful.herokuapp.com", target: "_blank"  %>
+          </div>
+          <div class="project-github">
+            <%= link_to "View source", "https://github.com/diegolarraz/Reuseful", target: "_blank"  %>
+          </div>
         </div>
       </div>
     </div>

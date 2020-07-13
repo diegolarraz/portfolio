@@ -211,8 +211,13 @@ html, body {
 .portfolio {
   padding-bottom: 100px;
 
-  img {
+  .website-image {
     height: 300px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -248,7 +253,7 @@ html, body {
   background-color: white;
 }
 
-.emitless {
+.project-odd {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,7 +268,7 @@ html, body {
   }
 }
 
-.fixenova {
+.project-even {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,6 +301,42 @@ html, body {
 
 .front-icon {
   font-size: 26px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  width: 18vw;
+}
+
+.project-website {
+  display: flex;
+
+  a {
+    margin-left: 8px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.project-github {
+  display: flex;
+
+  a {
+    margin-left: 8px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.link-image {
+  width: 2vw;
 }
 
 @media only screen and (max-width: 576px) {
