@@ -309,6 +309,11 @@ html, body {
 
 .front-icon {
   font-size: 26px;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .project-links {
@@ -348,6 +353,18 @@ html, body {
 
 .mobile-link {
   display: none;
+}
+
+.bio-link {
+  text-decoration: none;
+  color: #769BC5;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: #91AFC6;
+    transform: scale(1.05);
+  }
 }
 
 @media only screen and (max-width: 576px) {
