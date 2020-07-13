@@ -185,7 +185,7 @@
         </p>
         <div class="emitless-links">
           <%= link_to "View site", "https://www.emitless-app.com", target: "_blank"  %>
-          <%= link_to "View source", "https://github.com/diegolarraz/Emitless", target: "_blank"  %>
+          <i class="fab fa-github project-icon"></i><%= link_to "View source", "https://github.com/diegolarraz/Emitless", target: "_blank"  %>
         </div>
       </div>
     </div>
@@ -197,12 +197,17 @@
           A new website for an established musician who wanted to expand his online presence and have more freedom on the content he wished to post than was available with his previous host.
         </p>
         <div class="emitless-links">
-          <%= link_to "View site", "https://www.fixenova.com", target: "_blank"  %>
-          <%= link_to "View source", "https://github.com/diegolarraz/Fiducia", target: "_blank"  %>
+          <div class="project-website">
+            <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
+            <%= link_to "View site", "https://fiducia.herokuapp.com/", target: "_blank"  %>
+          </div>
+          <div class="project-github">
+            <i class="fab fa-github project-icon"></i><%= link_to "View source", "https://github.com/diegolarraz/Fiducia", target: "_blank"  %>
+          </div>
         </div>
       </div>
       <div class="project-link">
-        <%= link_to "http://www.fixenova.com", :target => '_blank' do %>
+        <%= link_to "https://fiducia.herokuapp.com/", :target => '_blank' do %>
          <%= image_tag "fiducia.png", class: "link-image", alt: "Computer screen logo" %>
         <% end %>
       </div>
@@ -220,8 +225,8 @@
           A new website for an established musician who wanted to expand his online presence and have more freedom on the content he wished to post than was available with his previous host.
         </p>
         <div class="emitless-links">
-          <%= link_to "View site", "https://www.emitless-app.com", target: "_blank"  %>
-          <%= link_to "View source", "https://github.com/diegolarraz/Emitless", target: "_blank"  %>
+          <i class="fal fa-browser"></i><%= link_to "View site", "https://www.re-useful.herokuapp.com", target: "_blank"  %>
+          <i class="fab fa-github project-icon"></i><%= link_to "View source", "https://github.com/diegolarraz/Reuseful", target: "_blank"  %>
         </div>
       </div>
     </div>
