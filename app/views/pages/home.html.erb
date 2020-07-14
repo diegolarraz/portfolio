@@ -28,7 +28,7 @@
       <span class="title">Hi, <span class="im">I'm</span> <span class="underline">Diego</span></span><br>
     </div>
     <div class="front-page-content2">
-      <span class="summary quotes">A Fullstack developer</span><br><br>
+      <span class="summary quotes">A Full Stack Engineer</span><br><br>
     </div>
     <div class="front-page-content3">
       <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go' do %>
@@ -44,7 +44,7 @@
     </div>
     <br>
     <div class="link-container">
-        <%= link_to 'https://www.linkedin.com/in/johnmarsden24/', class: "mr30", target: "_blank", :action => 'go' do %>
+        <%= link_to 'https://www.linkedin.com/in/diego-larraz-22138a175/', class: "mr30", target: "_blank", :action => 'go' do %>
           <i class="fab fa-linkedin-in front-icon"></i>
         <% end %>
 
@@ -53,7 +53,7 @@
         <% end %>
 
         <%= link_to download_pdf_path, class: "mr30", target: "_blank", :action => 'go' do %>
-          <i class="far fa-file front-icon"></i>
+          <%= image_tag "cv.svg", alt: "alttext", class: "front-icon", id: "cvsvg" %>
         <% end %>
     </div>
   </div>
@@ -227,7 +227,7 @@
 
     <div class="project-odd">
       <div class="project-link">
-        <%= link_to "https://www.re-useful.herokuapp.com", :target => '_blank' do %>
+        <%= link_to "http://re-useful.herokuapp.com/", :target => '_blank' do %>
          <%= image_tag "re-useful.png", class: "website-image", alt: "Computer screen logo" %>
         <% end %>
       </div>
@@ -239,7 +239,7 @@
         <div class="project-links">
           <div class="project-website">
             <%= image_tag "screen.svg", class: "link-image", alt: "Computer screen logo" %>
-            <%= link_to "View site", "https://www.re-useful.herokuapp.com", target: "_blank", class: "app-link"  %>
+            <%= link_to "View site", "http://re-useful.herokuapp.com/", target: "_blank", class: "app-link"  %>
           </div>
           <div class="project-github">
             <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>

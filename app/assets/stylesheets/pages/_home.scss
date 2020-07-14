@@ -308,7 +308,7 @@ html, body {
 }
 
 .front-icon {
-  font-size: 26px;
+  font-size: 32px;
   transition: all .2s ease-in-out;
 
   &:hover {
@@ -365,6 +365,10 @@ html, body {
     color: #91AFC6;
     transform: scale(1.05);
   }
+}
+
+#cvsvg {
+  width: 32px;
 }
 
 @media only screen and (max-width: 576px) {
