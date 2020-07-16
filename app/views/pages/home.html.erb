@@ -1,26 +1,3 @@
-<div class="navbar">
-  <div class="container">
-    <div class="my-nav intro">
-      <div class="navbar-left">
-        <a href="/" class="full-name">
-          <strong>Diego Larraz</strong> FSD
-        </a>
-        <a href="/" class="short-name">
-          <strong>DL</strong>FSD
-        </a>
-      </div>
-      <div class="navbar-right">
-        <%= link_to "About me", "#about-me", class: "navbar-link about" %>
-        <%= link_to "Summary", "#summary", class: "navbar-link about" %>
-        <%= link_to "Projects", "#projects", class: "navbar-link projects" %>
-        <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go', class: "navbar-link contact" do %>
-          Contact
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="front-page" id="home">
   <div class="container">
     <div class="front-page-content1">
@@ -83,7 +60,7 @@
 
         Aside from my professional life, I love to spend my time with my family, friends and playing sports. I have played in two Lacrosse World Championships with the Spanish National team, I am extremely interested in rock climbing and love any sort of board sport.<br><br>
 
-        Please feel free to email using the <a href="#contact-me" class="bio-link">contact form</a> if you have any questions.
+        Please feel free to email using the <a href="#contact-me" class="bio-link" remote="true">contact form</a> if you have any questions.
       </div>
       <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3">
       </div>
@@ -93,74 +70,7 @@
 
 <div class="gap"></div>
 
-<div class="education-experience-skills" id="summary">
-  <div class="container">
-    <div class="row is-flex">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
-        <div class="box">
-          <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Education</h4>
-          <div class="line"></div>2020
-          <br><strong>Le Wagon</strong>
-          <br>Fullstack Web Development
-          <br>
-          <br>2016 - 2019
-          <br><strong>University of Exeter</strong>
-          <br>BA Business Management
-          <br>
-          <br>2015 - 2016
-          <br><strong>University of Wisconsin - Madison</strong>
-          <br>BA Computer Engineering
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
-        <div class="box">
-          <h4><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Experience</h4>
-          <div class="line"></div>
-          2020
-          <br><strong>Le Wagon</strong>
-          <br><span class="">Teaching Assistant</span>
-          <br>
-          <br>2020
-          <br><strong>Freelance Developer</strong>
-          <br><span class="">Fixenova App</span>
-          <br>
-          <br> 2019 - 2020
-          <br><strong>Homeppl</strong>
-          <br><span class="">Operations Analyst at a Tech Startup</span>
-          <br>
-          <br> 2016
-          <br><strong>College Pro</strong>
-          <br><span class="">Business Development Executive</span>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
-        <div class="box">
-          <h4><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;Skills</h4>
-          <div class="line"></div>
-          <h1>
-            <div class="skill-icons">
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-bootstrap-plain-wordmark"></i><br>
-              <i class="devicon-sass-original"></i>
-              <i class="devicon-ruby-plain-wordmark"></i>
-              <i class="devicon-rails-plain-wordmark"></i><br>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-react-original-wordmark"></i>
-              <i class="devicon-git-plain colored"></i>
-              <i class="devicon-photoshop-plain"></i>
-              <i class="devicon-postgresql-plain"></i>
-              <i class="devicon-heroku-plain-wordmark"></i>
-              <i class="devicon-webpack-plain"></i>
-              <i class="devicon-redis-plain-wordmark"></i>
-              <i class="devicon-yarn-plain"></i>
-            </div>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render "summary" %>
 
 <div class="portfolio-strip text-center white" id="projects">
   <div class="container reveal white">
@@ -169,103 +79,7 @@
   </div>
 </div>
 
-<div class="portfolio text-center white">
-  <div class="container white">
-    <div class="project-odd">
-      <div class="project-link">
-        <%= link_to "https://www.emitless-app.com", :target => '_blank' do %>
-         <%= image_tag "emitless.png", class: "website-image", alt: "Computer screen logo" %>
-        <% end %>
-      </div>
-      <div class="description">
-        <h2 class="mb15 morado">Emitless</h2>
-        <p class="emitless-description morado">
-          Emitless will analyse several retailers and supermarkets and tell you where your basket has the lowest negative impact on the planet. The algorithm will then give you recommendations to switch products for more environmentally friendly ones.
-        </p>
-        <div class="project-links">
-          <div class="project-website">
-            <%= image_tag "screen.svg", class: "link-image", alt: "Computer screen logo" %>
-            <%= link_to "View site", "https://www.emitless-app.com", target: "_blank", class: "app-link"  %>
-          </div>
-          <div class="project-github">
-            <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
-            <%= link_to "View source", "https://github.com/diegolarraz/Emitless", target: "_blank", class: "app-link"  %>
-          </div>
-        </div>
-      </div>
-    </div>
+<%= render "projects" %>
 
-    <div class="project-even">
-      <div class="mobile-link project-link">
-        <%= link_to "https://fiducia.herokuapp.com/", :target => '_blank' do %>
-         <%= image_tag "fiducia.png", class: "website-image", alt: "Computer screen logo" %>
-        <% end %>
-      </div>
-      <div class="description">
-        <h2 class="mb15 morado">Fixenova</h2>
-        <p class="emitless-description morado">
-          A startup project based in Barcelona, Spain. This is the MVP version to gather information on the concept and tailor features to the target market. In Fixenova you will be able to hire our contractors to make a renovation or repair on your home. You can also become a contractor if you wish!
-        </p>
-        <div class="project-links">
-          <div class="project-website">
-            <%= image_tag "screen.svg", class: "link-image", alt: "Computer screen logo" %>
-            <%= link_to "View site", "https://fiducia.herokuapp.com/", target: "_blank", class: "app-link"  %>
-          </div>
-          <div class="project-github">
-            <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
-            <%= link_to "View source", "https://github.com/diegolarraz/Fiducia", target: "_blank", class: "app-link"  %>
-          </div>
-        </div>
-      </div>
-      <div class="project-link hidden-mobile">
-        <%= link_to "https://fiducia.herokuapp.com/", :target => '_blank' do %>
-         <%= image_tag "fiducia.png", class: "website-image", alt: "Computer screen logo" %>
-        <% end %>
-      </div>
-    </div>
-
-    <div class="project-odd">
-      <div class="project-link">
-        <%= link_to "http://re-useful.herokuapp.com/", :target => '_blank' do %>
-         <%= image_tag "re-useful.png", class: "website-image", alt: "Computer screen logo" %>
-        <% end %>
-      </div>
-      <div class="description">
-        <h2 class="mb15 morado">Reuseful</h2>
-        <p class="emitless-description morado">
-          A new website for people to list things they don't want anymore. Find products for free and list the things you would like to give away! There are smart notifications and map integrations to help you locate your nearest items.
-        </p>
-        <div class="project-links">
-          <div class="project-website">
-            <%= image_tag "screen.svg", class: "link-image", alt: "Computer screen logo" %>
-            <%= link_to "View site", "http://re-useful.herokuapp.com/", target: "_blank", class: "app-link"  %>
-          </div>
-          <div class="project-github">
-            <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
-            <%= link_to "View source", "https://github.com/diegolarraz/Reuseful", target: "_blank", class: "app-link"  %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="contact-me" id="contact-me">
-  <div class="container reveal">
-    <div class="row">
-      <div class="hiddex-xs col-sm-2 col-md-3 col-lg-3"></div>
-      <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 text-center">
-        <span class="title">Contact me</span><br><br>
-        <a href="https://www.linkedin.com/in/diego-larraz-22138a175/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/diegolarraz" target="_blank"><i class="fab fa-github-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go', class: "contact" do %>
-          <i class="far fa-envelope"></i>
-        <% end %>
-        <br><br>
-        <span class="copyright">&copy; 2020 Diego Larraz</span>
-      </div>
-      <div class="hiddex-xs col-sm-2 col-md-3 col-lg-3"></div>
-    </div>
-  </div>
-</div>
+<%= render "shared/contact" %>
 

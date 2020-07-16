@@ -1,0 +1,88 @@
+.project-odd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  img {
+    flex: 1;
+  }
+
+  .website-image {
+    margin-right: 5vw;
+  }
+}
+
+.description {
+  max-width: 500px;
+}
+
+.morado {
+  color: #769BC5;
+}
+
+.project-even {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  img {
+    flex: 1;
+  }
+
+  .website-image {
+    margin-right: 5vw;
+  }
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-container {
+  width: 14vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  width: 18vw;
+}
+
+.project-website {
+  display: flex;
+  align-items: center;
+}
+
+.project-github {
+  display: flex;
+  align-items: center;
+}
+
+.app-link {
+  margin-left: 8px;
+  text-decoration: none;
+  color: #769BC5;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: #91AFC6;
+    transform: scale(1.05);
+
+  }
+}
+
+.link-image {
+  width: 2vw;
+  min-width: 24px;
+}

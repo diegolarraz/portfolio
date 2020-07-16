@@ -1,0 +1,18 @@
+<div class="contact-me" id="contact-me">
+  <div class="container reveal">
+    <div class="row">
+      <div class="hiddex-xs col-sm-2 col-md-3 col-lg-3"></div>
+      <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 text-center">
+        <span class="title">Contact me</span><br><br>
+        <a href="https://www.linkedin.com/in/diego-larraz-22138a175/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/diegolarraz" target="_blank"><i class="fab fa-github-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <%= mail_to 'diegolarraz1@gmail.com', target: "_blank", :action => 'go', class: "contact" do %>
+          <i class="far fa-envelope"></i>
+        <% end %>
+        <br><br>
+        <span class="copyright">&copy; 2020 Diego Larraz</span>
+      </div>
+      <div class="hiddex-xs col-sm-2 col-md-3 col-lg-3"></div>
+    </div>
+  </div>
+</div>
