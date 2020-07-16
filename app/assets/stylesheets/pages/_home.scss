@@ -180,3 +180,14 @@ html, body {
 .white {
   background-color: white;
 }
+
+@media only screen and (max-width: 576px) {
+  .front-page {
+
+    .container {
+      position: static;
+      margin-top: 50vh;
+
+    }
+  }
+}
