@@ -26,7 +26,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
 
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
   (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
   ;r.type="text/javascript"
   ;r.integrity="sha384-girahbTbYZ9tT03PWWj0mEVgyxtZoyDF9KVZdL+R53PP5wCY0PiVUKq0jeRlMx9M"
@@ -52,7 +52,24 @@
   ;e.amplitude=n})(window,document);
 
   amplitude.getInstance().init("2a190e684be8379874d05f4fb9fed0b1");
+  amplitude.getInstance().logEvent('EVENT_NAME_HERE');
+</script> -->
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://diegolarraz.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/diegolarraz.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
+<!-- End Matomo Code -->
+
   </head>
 
   <body>
